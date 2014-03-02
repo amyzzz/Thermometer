@@ -6,7 +6,7 @@ def set_color(new_color):
 def set_url(url):
     thermometer.url = url
     
-thermometer = Thermometer()
+thermometer = thermometer.Thermometer()
 
 set_color(input("Set color"))
 set_url(input("Set url"))
