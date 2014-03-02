@@ -1,6 +1,4 @@
 
-<script type="text/javascript" src="//sslstatic.wix.com/services/js-sdk/1.24.0/js/Wix.js"></script>
-
 import csv
 import graphics
 import json
