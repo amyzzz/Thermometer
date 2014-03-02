@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src='https://cdn.firebase.com/v0/firebase.js'></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Widget Settings &bull; Wix</title>
 	<link rel="stylesheet" href="ui-lib.min.css"/>
 </head>
 <body>
 <div wix-scroll="{height:646}">
+ 
     <header class="box">
         <div class="logo">
             <img width="86" src="images/wix_icon.png" alt="logo"/>
@@ -118,6 +120,17 @@
             imageVisibility: 'show',
             imageLink: false
         });
+        
+        var myDataRef = new Firebase("https://blistering-fire-1896.firebaseio.com/user/1");
+        
+        var url = Wix.UI.get('URL');
+
+        var unit = Wix.UI.get('unit');
+        
+        var goal = Wix.UI.get('goal');
+        
+        var raised = Wix.UI.get('raised');
+        myDataRef.set({'URL': url, 'unit': unit, 'goal': goal, 'raised': raised});
 
     });
 
