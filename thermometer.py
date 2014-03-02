@@ -1,4 +1,3 @@
-
 import csv
 import graphics
 import json
@@ -52,5 +51,5 @@ class Thermometer(object):
         wait = input("PRESS ENTER TO CONTINUE.")
         
 thermometer = Thermometer()
-
+thermometer.update()
 
