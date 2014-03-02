@@ -1,3 +1,6 @@
+
+<script type="text/javascript" src="//sslstatic.wix.com/services/js-sdk/1.24.0/js/Wix.js"></script>
+
 import csv
 import graphics
 import json
@@ -37,7 +40,7 @@ class Thermometer(object)
         while (count > (350-y_bars) and count > 15):
             pos = (26, count)
             points = graphics.rectangle_points(pos, 4, 1)
-            image.draw_polygon(points, 'Red', 'Red')
+            image.draw_polygon(points, color, color)
             count -= 1
     
         if y_bars > 335:
