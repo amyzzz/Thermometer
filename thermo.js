@@ -69,6 +69,12 @@ $(document).ready(function(){
     // or with parameters if you want to update it using JavaScript.
     // you can update it live, and choose whether to show the animation
     // (which you might not if the updates are relatively small)
-    thermometer("thermo2", 1000000, 425610 );
+    var myValues = [354273, 354210, 354114, 354116];
+    var i = 0;
+    function changeValue() {
+        thermometer("thermo2", 250000, myValues[i], true);
+        i++;
+    }
+    var change = setInterval(changeValue(), 20000);
 
 });
